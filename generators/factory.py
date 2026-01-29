@@ -17,7 +17,7 @@ from .model import CodeLlama, \
                     GPTDavinci, \
                     Sonnet3,\
                     Sonnet35, \
-                    Llama3_1_405B, Llama3_1_70B, Llama3_1_8B,Llama2_7B,Mistral_7B,Llama3_1_8B,Qwen_7B,Qwen3_70B,Qwen_1dot5B,Qwen2_1dot5B,GPT_OSS_20B,TianjunLlama3_8B_Lora_Direct_Sol
+                    Llama3_1_405B, Llama3_1_70B, Llama3_1_8B,Llama2_7B,Mistral_7B,Llama3_1_8B,Qwen_7B,Qwen3_70B,Qwen_1dot5B,Qwen2_1dot5B,GPT_OSS_20B
 
 # from .model_HF import Mistral_7B,Llama3_1_8B,Qwen_1dot5B
 
@@ -104,10 +104,6 @@ def model_factory(model_name: str) -> ModelBase:
     elif model_name == "llama2_7b":
         print("using LLama 2 7B")
         return Llama2_7B()
-
-    elif model_name == "tianjun_llama3_8b_lora_direct_sol":
-        print("using Tianjun Llama3 8B LoRA Direct Sol")
-        return TianjunLlama3_8B_Lora_Direct_Sol()
 
     elif model_name == "qwen2_1.5b":
         print("using Qwen2 1.5B (arize-ai)")

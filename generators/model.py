@@ -554,12 +554,6 @@ class Qwen_1dot5B(TogetherAIChat):
         super().__init__(model_id)
 
 
-class TianjunLlama3_8B_Lora_Direct_Sol(TogetherAIChat):
-    def __init__(self):
-        model_id = "tianjun/llama3-8b-lora_direct_sol"
-        super().__init__(model_id)
-
-
 class Qwen2_1dot5B(TogetherAIChat):
     def __init__(self):
         model_id = "arize-ai/qwen-2-1.5b-instruct"
