@@ -27,13 +27,6 @@ from dashscope import Generation
 import re
 
 
-# Singapore/International endpoint; switch to the Beijing endpoint if needed.
-# dashscope.base_http_api_url = "https://dashscope-intl.aliyuncs.com/api/v1"
-dashscope.base_http_api_url = "https://dashscope.aliyuncs.com/api/v1"  # <-- use this if you are in CN region
-
-# Pick up the API key from environment (or set dashscope.api_key = "sk-..." explicitly)
-dashscope.api_key = os.environ.get("DASHSCOPE_API_KEY", "xxxxx")
-
 
 def remove_unicode_chars(text: str) -> str:
     return re.sub(r'[^\x00-\x7F]+', '', text)
