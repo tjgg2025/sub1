@@ -12,11 +12,7 @@ pip install -r requirements.txt
 export OPENAI_API_KEY=<your key>
 ```
 
-3. (Optional) For Together AI models, modify the API key in `generators/model.py` line 62:
-```python
-api_key=os.environ.get("TOGETHER_API_KEY", "xxxxx")
-```
-Or set the environment variable:
+3. (Optional) For Together AI models:
 ```bash
 export TOGETHER_API_KEY=<your key>
 ```
