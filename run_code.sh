@@ -39,7 +39,7 @@ python main.py \
     --verbose
 
 
-# DoT with Memory Bank
+# DoT-bank
 python main.py \
     --run_name "dot_bank_humaneval" \
     --root_dir ./results/humaneval/dot_bank/ \
