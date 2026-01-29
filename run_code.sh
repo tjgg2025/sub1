@@ -7,7 +7,7 @@ python main.py \
     --dataset_path benchmarks/humaneval_full.jsonl \
     --strategy "simple" \
     --language "py" \
-    --model "gpt-4o" \
+    --model "llama3_1_8b" \
     --pass_at_k "1" \
     --max_iters "1" \
     --verbose
@@ -20,7 +20,7 @@ python main.py \
     --dataset_path benchmarks/humaneval_full.jsonl \
     --strategy "reflexion" \
     --language "py" \
-    --model "gpt-4o" \
+    --model "llama3_1_8b" \
     --pass_at_k "1" \
     --max_iters "5" \
     --verbose
@@ -33,7 +33,7 @@ python main.py \
     --dataset_path benchmarks/humaneval_full.jsonl \
     --strategy "dot" \
     --language "py" \
-    --model "gpt-4o" \
+    --model "llama3_1_8b" \
     --pass_at_k "1" \
     --max_iters "5" \
     --verbose
@@ -46,20 +46,20 @@ python main.py \
     --dataset_path benchmarks/humaneval_full.jsonl \
     --strategy "dot_bank" \
     --language "py" \
-    --model "gpt-4o" \
+    --model "llama3_1_8b" \
     --pass_at_k "1" \
     --max_iters "5" \
     --verbose
 
 
-# ParamAgent (Parametric Agent with Pitfall Insights)
+# ParamAgent
 python main_param.py \
     --run_name "paramAgent_humaneval" \
     --root_dir ./results/humaneval/paramAgent/ \
     --dataset_path benchmarks/humaneval_full.jsonl \
     --strategy "dot" \
     --language "py" \
-    --model "gpt-4o" \
+    --model "llama3_1_8b" \
     --pass_at_k "1" \
     --max_iters "5" \
     --use_mistakes \
