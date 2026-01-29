@@ -550,17 +550,6 @@ class Qwen3_70B(TogetherAIChat):
 
 class Qwen_1dot5B(TogetherAIChat):
     def __init__(self):
-        # client = Together(api_key="831b6e4c5f73358074b1ad8cc628614dbc0e19a7d387a0db0e9dc78af6e41cf0") 
-        # endpoint = client.endpoints.create(
-        #     model="deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
-        #     hardware="1x_nvidia_h100_80gb_sxm",
-        #     min_replicas=1,
-        #     max_replicas=1,
-        #     display_name="tianjun-deepseek-r1-qwen-1_5b"
-        # )
-        # model_id = endpoint.name
-        # print ('qwen endpoint name:',model_id)
-        # model_id = "arize-ai/qwen-2-1.5b-instruct"
         model_id = "Qwen/Qwen2.5-72B-Instruct-Turbo"
         super().__init__(model_id)
 

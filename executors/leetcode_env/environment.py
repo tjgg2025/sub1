@@ -38,7 +38,7 @@ class LeetCodeEnv(gym.Env):
             try:
                 # csrf_token = leetcode.auth.get_csrf_cookie(leetcode_session)
                 # manually set csrf token from browser session
-                csrf_token = "KQwVnAMkxSJwoJnA5VY5OoGOnDMbj2hjVjTQtscAexFt1ct02nOk3AYjuORb0ErH"
+                csrf_token = "xxxxx"  # Set via LEETCODE_CSRF_TOKEN env var
             except KeyError as e:
                 raise KeyError(
                     "Could not find CSRF token in cookies. Set the token manually in an LEETCODE_CSRF_TOKEN environment variable."

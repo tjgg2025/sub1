@@ -923,7 +923,7 @@ class PyGenerator(Generator):
         2) five flawed Python snippets illustrating those pitfalls.
         """
         # ---------- initialise Together client -------------------------
-        client = Together(api_key="831b6e4c5f73358074b1ad8cc628614dbc0e19a7d387a0db0e9dc78af6e41cf0")
+        client = Together(api_key=os.environ.get("TOGETHER_API_KEY", "xxxxx"))
 
         # ---------- craft chat messages --------------------------------
         messages: List[Dict[str, str]] = [
