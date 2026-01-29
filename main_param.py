@@ -9,7 +9,7 @@ from utils import read_jsonl, read_jsonl_gz, read_jsonl_map
 import json
 # from dot import run_dot
 # from dot_parametric import run_dot
-from dot_parametric_with_bank import run_dot
+from paramAgent import run_dot
 from dot_bank import run_dot_bank
 
 try:
